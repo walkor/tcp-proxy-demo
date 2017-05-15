@@ -53,6 +53,7 @@ $proxy->onConnect = function($connection)
         $connection_to_mysql->close();
     };
 
+    $connection_to_mysql->connect();
 };
 
 // 如果不是在根目录启动，则运行runAll方法
